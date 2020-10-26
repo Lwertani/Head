@@ -1,0 +1,132 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+}
+.layout__header {
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+}
+
+.logo {
+    margin-left: 5%;
+    font-family: 'Actor', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+}
+
+.nav__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-top: 7px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 140% */
+    color: #FFFFFF;
+}
+
+.nav__link:hover {
+    color: gray;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+main {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.layout__main {
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.main__heading {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 84px;
+    line-height: 102px;
+    /* identical to box height, or 121% */
+    letter-spacing: -2px; 
+    color: #FFFFFF;
+    margin-top: 50%;
+    margin-left: -50%;
+}
+
+.main__info{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    /* or 155% */
+    color: #FFFFFF;
+    max-width: 416px;
+    margin-left: -50%;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    main {
+        display: block;
+    }
+    .main__heading{
+    margin-top: 10%;
+    margin-left: 10%;
+    }
+    .main__info{
+        margin-top: 5%;
+        margin-left: 10%;  
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .nav a.icon {
+      float: right;
+      display: block;
+      font-size:15px; 
+    }
+  }
+  
+@media screen and (max-width: 499px) {
+        main {
+        display: block;
+    }
+    .main__heading{
+    margin-top: 10%;
+    margin-left: 10%;
+    }
+    .main__info{
+        margin-top: 5%;
+        margin-left: 10%;  
+    }
+
+  }
